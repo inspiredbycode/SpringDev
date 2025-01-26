@@ -9,11 +9,11 @@ public class App
     {
         
     	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");  // create a container
-    	Alien obj1 = (Alien) context.getBean("alien1");
+    	WorkStation ws1 = (WorkStation) context.getBean("workstation1");
 //    	obj1.setAge(21);
-    	System.out.println(obj1.getAge());
+    	System.out.println(ws1.getId());
     	
-    	obj1.code();
+    	ws1.code();
 //    	
 //    	Alien obj2 = (Alien) context.getBean("alien1");
 //    	System.out.println(obj2.age);
